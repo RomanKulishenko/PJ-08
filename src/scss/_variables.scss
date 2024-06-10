@@ -1,0 +1,29 @@
+@use "sass:math";
+@function remHandler($size) {
+  @return math.div($size, 16) + rem;
+}
+@function vwHandler($x) {
+  @return math.div($x, 14.4) + vw;
+}
+// COLORS
+
+$black: #000;
+$darkblue: #1c2a39;
+$white: #fff;
+$darkwhite: #efeef6;
+$red: #ff353a;
+$violet: #9e98dc;
+$darkviolet: #756ad3;
+$darkestviolet: #4c3db2;
+$pink: #ff8fe6;
+$grey: #eeecec;
+$lightgrey: #eeedf5;
+$darkgrey: #5c6a79;
+$yellow: #f2c94c;
+
+// FONTS
+$m-r: "Montserrat-Regular";
+$m-m: "Montserrat-Medium";
+$m-b: "Montserrat-Bold";
+$m-s: "Montserrat-SemiBold";
+$m-bl: "Montserrat-Black";
